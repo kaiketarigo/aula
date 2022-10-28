@@ -1,0 +1,107 @@
+@font-face{
+    font-family: 'Saiyan-Sans';
+    src: url('Saiyan-Sans.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+*{
+    
+    /* RESETAR O CSS */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+
+}
+
+main{
+    width: 70VW;
+    margin: 0 auto;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #7fcb07;
+    font-size: 16px;
+}
+
+/* ELEMENTOS */
+
+/* IDENTIFICADOR E CLASSE */
+section#menu{
+    background-color: #e55e2e;
+    padding: 7px 10px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+img.banner{
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+}
+.card{
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+
+
+/* HIERARQUIA */
+section#menu>header{
+    display: flex;
+    align-items: center; /* EIXO VERTICAL */
+
+}
+section#menu>header>span{
+    margin-left: 15px;
+    font-size: 30px;
+    font-family: 'Saiyan-Sans',serif;
+
+}
+header>nav{
+    background-color: #fda402;
+    padding: 7px 10px;
+}
+nav>a:link,nav>a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+header> nav> span, header> nav> a{
+    font-size: 12px !important;
+    font-weight: bold;
+    color: #ffffff;
+
+
+}
+
+p::selection{
+    color: #e55e2e;
+}
+
+main>div{
+    background-color: #ac0117;
+    padding: 10px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #e55e2e;
+    padding: 10px;
+}
+footer>p{
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
